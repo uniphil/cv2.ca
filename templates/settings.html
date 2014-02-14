@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hi</title>
+  </head>
+  <body>
+    {% with messages = get_flashed_messages() %}
+      {% for message in messages %}
+        <p>{{ message }}</p>
+      {% endfor %}
+    {% endwith %}
+    <h1>Settings for {{ username }}</h1>
+    <form method="post" action="">
+      {{ form.hidden_tag() }}
+      {{ form.remote.label }} {{ form.remote }}
+      <button type="submit">Save</button>
+    </form>
+  </body>
+</html>
