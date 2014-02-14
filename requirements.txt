@@ -3,5 +3,5 @@ Flask-Login==0.2.9
 Flask-OAuth==0.12
 Flask-SQLAlchemy==1.0
 Flask-WTF==0.9.4
-venvgit2==0.20.2.1
+venvgit2==0.20.2.1.dev
 gunicorn==18.0
